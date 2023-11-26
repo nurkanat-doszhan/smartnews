@@ -5,15 +5,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
+  <nav class="navbar fixed-top navbar-expand-lg p-3 navbar-fixed">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="https://smartapps.kz/images/logogo.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-column" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto mb-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link p-0 mb-2 mb-xl-2 mb-lg-1 me-4" href="mailto:info@smartapps.kz">info@smartapps.kz</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link p-0 mb-2 mb-xl-2 mb-lg-1" href="tel:+77788701642">+7 (778) 870 16 42</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Услуги
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/2-it-consult.html">ИТ-консалтинг</a></li>
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/3-it-infrastructure.html">ИТ-инфраструктура</a></li>
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/5-cybersecurity.html">Кибербезопасность</a></li>
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/7-business-applications.html">Бизнес приложения</a></li>
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/4-corporate-networks.html">Корпоративные сети</a></li>
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/6-cloud-management.html">Управление облаками</a></li>
+              <li class="nav-item dropdown position-static"><a class="dropdown-item" href="/pages/1.html">Управляемые ИТ-услуги</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Компания
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pages/company.html">О компании</a></li>
+              <li><a class="dropdown-item" href="/pages/company.html#methodology">Методология</a></li>
+              <li><a class="dropdown-item" href="/pages/company.html#certificates">Сертификаты</a></li>
+              <li><a class="dropdown-item" href="/pages/company.html#career">Карьера</a></li>
+              <li><a class="dropdown-item" href="/pages/company.html#addr">Адреса</a></li>
+              <li><a class="dropdown-item" href="/pages/company.html#clients">Нам доверяют</a></li>
+              <li><a class="dropdown-item" href="/pages/company.html#partners">Партнеры</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="/pages/contacts.html#addresses" aria-disabled="true">Контакты</a>
+          </li>
+          <div class="dropdown me-5">
+            <button class="btn btn-light shadow-sm rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe me-1 text-danger"></i>
+              RU
+              <i class="bi bi-chevron-down ms-2"></i>
+            </button>
+            <ul class="dropdown-menu afternone">
+              <li><a class="dropdown-item" href="#">KZ</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+          <a class="btn rounded-pill d-flex align-items-center orange" data-toggle="tooltip" data-placement="left" title="Сайт находится в разработке">
+            <i class="bi bi-chevron-right me-2"></i>
+            B2B
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <div class="row pt-5">
-      <div class="col-md-3 last-news">
+      <div class="col-xl-3 order-xl-1 col-md-8 last-news">
         <h6>Последние опубликованные новости:</h6>
         <ul>
           <li><a href="#">Требования заемщика при оформлении займов на 7-20-25</a></li>
@@ -23,7 +94,14 @@
           <li><a href="#">Продление договора займа</a></li>
         </ul>
       </div>
-      <div class="col-md-6">
+      <div class="col-xl-3 order-xl-3 col-md-4">
+        <h6>Теги:</h6>
+        <span class="badge bg-warning text-dark rounded-5">Стройка</span>
+        <span class="badge bg-warning text-dark rounded-5">Дом</span>
+        <span class="badge bg-warning text-dark rounded-5">Астана</span>
+        <span class="badge bg-warning text-dark rounded-5">Материалы</span>
+      </div>
+      <div class="col-xl-6 order-xl-2 col-md-12">
         <small>Сегодня, 13:46</small>
         <h1 class="my-3">Как пострить дом мечты?</h1>
         <img class="rounded-2 w-100 mb-4" src="https://images.unsplash.com/photo-1699882236909-b66077950046" alt="">
@@ -43,10 +121,10 @@
           газовый пистолет, гладкоствольное ружье и боевые патроны.</p>
         <div class="row mb-4">
           <div class="col-md-6">
-            <img class="rounded-1 w-100" src="https://images.unsplash.com/photo-1699882236909-b66077950046" alt="">
+            <img class="rounded-1 mb-2 w-100" src="https://images.unsplash.com/photo-1699882236909-b66077950046" alt="">
           </div>
           <div class="col-md-6">
-            <img class="rounded-1 w-100" src="https://images.unsplash.com/photo-1699882236909-b66077950046" alt="">
+            <img class="rounded-1 mb-2 w-100" src="https://images.unsplash.com/photo-1699882236909-b66077950046" alt="">
           </div>
         </div>
         <p>"По результатам служебного расследования освобождены от занимаемых должностей
@@ -57,15 +135,64 @@
           по статьям Уголовного кодекса "Приготовление к краже и "Превышение власти или
           должностных полномочий", - сообщили в полиции.</p>
       </div>
-      <div class="col-md-3">
-        <h6>Теги:</h6>
-        <span class="badge bg-warning text-dark rounded-5">Стройка</span>
-        <span class="badge bg-warning text-dark rounded-5">Дом</span>
-        <span class="badge bg-warning text-dark rounded-5">Астана</span>
-        <span class="badge bg-warning text-dark rounded-5">Материалы</span>
-      </div>
     </div>
   </div>
+  <footer>
+    <div class="container py-1 text-light">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h4>Контакты</h4>
+          <ul>
+            <li>г.Астана, ул. Айтматова <br/> 29, НП-1, 010000</li>
+            <li>г.Алматы, ул. Бальзака <br/> 8, лит Д, 050040</li>
+            <li>Алматы: <a href="tel:+77273573656">+7 (727) 357-36-56</a></li>
+            <li>Астана: <a href="tel:+77172642642">+7 (7172) 642-642</a></li>
+            <li>Kcell: <a href="tel:+77788701642">+7 (778) 870-16-42</a></li>
+            <li><a href="info@smartapps.kz" class="fw-medium">info@smartapps.kz</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="/pages/2-it-consult.html">ИТ-консалтинг</a></li>
+            <li><a href="/pages/3-it-infrastructure.html">ИТ-инфраструктура</a></li>
+            <li><a href="/pages/5-cybersecurity.html">Кибербезопасность</a></li>
+            <li><a href="/pages/7-business-applications.html">Бизнес приложения</a></li>
+            <li><a href="/pages/4-corporate-networks.html">Корпоративные сети</a></li>
+            <li><a href="/pages/6-cloud-management.html">Управление облаками</a></li>
+            <li><a href="/pages/1.html">Управляемые ИТ-услуги</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="/pages/company.html">О компании</a></li>
+            <li><a href="/pages/company.html#methodology">Методология</a></li>
+            <li><a href="/pages/company.html#certificates">Сертификаты</a></li>
+            <li><a href="/pages/company.html#partners">Партнеры</a></li>
+            <li><a href="/pages/company.html#clients">Клиенты</a></li>
+            <li><a href="/pages/company.html#career">Карьера</a></li>
+            <li><a href="/pages/company.html#addr">Адреса</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 socicons">
+          <h4>B2B</h4>
+          <a href="https://www.instagram.com/smartapps.kz" target="_blank" class="me-4"><img src="https://smartapps.dreamstart.kz/images/instagram-footer.svg" alt="instagram"></a>
+          <a href="https://t.me/smartapps_it_company" target="_blank" class="me-4"><img src="https://smartapps.dreamstart.kz/images/telegram-footer.svg" alt="telegram"></a>
+          <a href="https://wa.me/77073573656" target="_blank" class="me-4"><img src="https://smartapps.dreamstart.kz/images/whatsapp-footer.svg" alt="whatsapp"></a>
+          <a href="/pages/contacts.html" class="btn btn-light btn-lg btn-application">Оставить заявку</a>
+        </div>
+      </div>
+      <div class="row mt-4 copy">
+        <div class="col-lg-9 col-md-6">
+          <span>&copy; 2023 SmartApps.</span>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span>Все права защищены</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
