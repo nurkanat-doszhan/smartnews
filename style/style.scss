@@ -294,6 +294,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .search h5 {
+    margin-bottom: 25px;
+  }
   .navbar-brand img {
     width: 150px;
   }
