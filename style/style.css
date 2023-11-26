@@ -243,4 +243,34 @@ footer p {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 800;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    transform: scale(0.8) translateY(-5%);
+  }
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar .container {
+    transform: scale(1);
+  }
+  .container {
+    transform: scale(0.8) translateY(-9%);
+  }
+  .container .search {
+    padding-top: 0 !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    transform: scale(0.8) translateY(-10%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar-brand img {
+    width: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */
